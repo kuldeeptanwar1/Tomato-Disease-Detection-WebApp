@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+}
+
+header{
+  background-color: black;
+  color: white;
+  height: 50px;
+  padding-top: 15px;
+}
+
+.Main-Area {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+button {
+  background: #0086fe;
+  font-size: calc(10px + 2vmin);
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  outline: 0;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 8px 13px;
+ 
+  &:hover {
+    background-color: rgb(10, 10, 176);
+  }
+}
+
+.card{
+  padding: 10px;
+  box-shadow: 0 0 5px #ffdfdf;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.card .top{
+  text-align: center;
+}
+.card p{
+  font-weight: bold;
+  color: #0086fe;
+}
+.card button{
+  outline: 0;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 8px 13px;
+  width: 100%;
+  background: #0086fe;
+}
+
+.card .drag-area{
+  height: 150px;
+  border-radius: 5px;
+  border: 2px dashed #0086fe;
+  background: #282c34;
+  color: #0086fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-top: 10px;
+}
+.card .drag-area .visible{
+  font-size: 18px;
+}
+.card .select{
+  color: #5256ad;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card .select:hover{
+  opacity: 0.6;
+}
+
+.card input,
+.card .drag-area .on-drop,
+.card .drag-area .dragover .visible{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
