@@ -17,7 +17,7 @@ function App() {
       formData.append("file", image);
       let res = await axios({
         method: "post",
-        url: "http://localhost:8000/predict",
+        url: "https://fastapi-1-0mse.onrender.com/predict",
         data: formData,
       });
       if (res.status === 200) {
