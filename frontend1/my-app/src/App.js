@@ -61,7 +61,6 @@ function App() {
     event.preventDefault();
     setIsDragging(false);
     const file = event.dataTransfer.files[0];
-    console.log(file)
     setImage(file);
     setData(undefined);
  
